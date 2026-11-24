@@ -69,3 +69,65 @@ body {
     color: var(--verde);
     font-weight: bold;
 }
+
+.conteudo {
+    max-width: 1240px;
+    padding: 24px;
+}
+
+.resumo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.resumo_card {
+    padding: 14px 22px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.resumo_numero {
+    font-size: 40px;
+    color: var(--verde);
+    font-family: Impact, "Arial Narrow", Arial, sans-serif;
+}
+
+.resumo_texto {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5B6B68;
+}
+
+.resumo_card_alerta {
+    background-color: #FCE3DC;
+    border: 2px solid var(--laranja);
+}
+
+.resumo_card_alerta .resumo_numero,
+.resumo_card_alerta .resumo_texto {
+    color: var(--laranja-escuro);
+}
+
+.novo_produto {
+    background-color: var(--laranja);
+    border: none;
+    color: var(--creme);
+    border-radius: 14px;
+    font-family: inherit;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 0 22px;
+    cursor: pointer;
+}
+
+.novo_produto:hover {
+    transform: translateY(-2px);
+}
