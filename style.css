@@ -131,3 +131,32 @@ body {
 .novo_produto:hover {
     transform: translateY(-2px);
 }
+
+.pesquisa {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.pesquisa input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 12px;
+
+}
+
+.pesquisa button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    background-color: var(--verde);
+    color: var(--creme);
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background: var(--laranja);
+}
