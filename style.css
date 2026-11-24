@@ -73,6 +73,7 @@ body {
 .conteudo {
     max-width: 1240px;
     padding: 24px;
+    margin: 0 auto;
 }
 
 .resumo {
