@@ -8,12 +8,13 @@
   </head>
 
   <body>
+    <!-- HEADER  -->
     <header class="header">
       <div class="header_container">
         <a href="#" class="logo">
           <span class="logo_icone">E</span>
         </a>
-
+<!-- NAVEGAÇÃO DA HEADER -->
         <nav class="menu">
           <a href="#" class="menu_link menu_link_ativo">Produtos</a>
           <a href="#" class="menu_link">Fornecedores</a>
@@ -21,6 +22,7 @@
         </nav>
       </div>
     </header>
+  <!-- RESUMO E BOTÃO DE NOVOS PRODUTOS -->
     <main class="conteudo">
       <section class="resumo">
         <div class="resumo_card">
@@ -32,19 +34,52 @@
           <span class="resumo_texto">Precisam repor</span>
         </div>
 
-        <button class="novo_produto">+ Novo produto</button>
       </section>
+      <!-- FORMULARIO PARA CADASTRO -->
+      <form class="formulario" id="formulario">
+        <h2 id="formulario-titulo">Novo produto</h2>
+        <input type="hidden" id="produto-id">
+        <label> Nome *
+          <input type="text" id="nome" required>
+        </label>
+        <label >Quantidade *
+          <input type="number" id="quantidade" min="0" required>
+        </label>
+        <label>
+          Estoque mínimo *
+          <input type="number" id="minimo" min="0" required />
+        </label>
 
+        <label>
+          Fornecedor *
+          <input type="text" id="fornecedor" required />
+        </label>
+                <div class="formulario_botoes">
+          <button type="submit" class="botao_salvar">Salvar</button>
+          <button type="button" class="botao_cancelar" id="botao-cancelar">Cancelar</button>
+        </div>
+        
+        <!-- MENSAGEM SUCESSO/ERRO -->
+  <p class="mensagem" id="mensagem" role="status" hidden></p>
+      </form>
+<!-- TABELA DOS PRODUTOS -->
      <section class="tabela_produtos">
         <table>
             <caption>Tabela dos Produtos</caption>
-            <tr>
+            <thead>
+
+              <tr>
                 <th>Produtos</th>
                 <th>Quantidade</th>
                 <th>Mínimo</th>
                 <th>Fornecedor</th>
-
-            </tr>
+                <th>Ações</th>
+                
+              </tr>
+            </thead>
+            <tbody id="lista-produtos">
+              <!-- CRIADO NO JS -->
+          </tbody>
             <tr>
                 <td>dado 1</td>
                 <td>dado 2</td>
@@ -63,5 +98,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

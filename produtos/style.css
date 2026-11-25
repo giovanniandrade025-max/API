@@ -15,6 +15,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .header {
     background: var(--verde);
     color: var(--creme);
@@ -25,6 +29,7 @@ body {
     margin: auto;
     padding: 14px 24px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -64,7 +69,7 @@ body {
     background: rgba(253, 251, 239, 0.12);
 }
 
-.menu_link_ativo {
+.menu_link_ativo, .menu_link_ativo:hover {
     background: var(--creme);
     color: var(--verde);
     font-weight: bold;
@@ -72,14 +77,20 @@ body {
 
 .conteudo {
     max-width: 1240px;
-    padding: 24px;
     margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .resumo {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .resumo_card {
@@ -114,24 +125,52 @@ body {
     color: var(--laranja-escuro);
 }
 
-.novo_produto {
-    background-color: var(--laranja);
-    border: none;
-    color: var(--creme);
-    border-radius: 14px;
-    font-family: inherit;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+.mensagem {
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 10px;
     font-weight: 700;
-    font-size: 19px;
-    padding: 0 22px;
-    cursor: pointer;
 }
 
-.novo_produto:hover {
-    transform: translateY(-2px);
+.mensagem_sucesso {
+    background: #DCEBE9;
+    color: var(--verde);
+    border: 2px solid var(--verde);
 }
+
+.mensagem_erro {
+    background: #FCE3DC;
+    color: var(--laranja-escuro);
+    border: 2px solid var(--laranja);
+}
+
+.formulario {
+    background: #FFFFFF;
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.formulario h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    color: var(--verde);
+}
+
+.formulario label {
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 
 .tabela_produtos {
     margin: 0 auto;
