@@ -171,6 +171,31 @@ body {
     font-weight: 700;
 }
 
+.formulario input {
+    padding: 11px;
+    border: 2px solid var(--borda);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--verde-escuro);
+}
+
+.formulario_botoes {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.botao_salvar, .botao_cancelar {
+    border: none;
+    background-color: var(--laranja);
+    padding: 19px;
+    color: var(--creme);
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+}
 
 .tabela_produtos {
     margin: 0 auto;
