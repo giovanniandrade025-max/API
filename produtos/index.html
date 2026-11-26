@@ -9,93 +9,66 @@
 
   <body>
     <!-- HEADER  -->
-    <header class="header">
-      <div class="header_container">
-        <a href="#" class="logo">
-          <span class="logo_icone">E</span>
-        </a>
-<!-- NAVEGAÇÃO DA HEADER -->
-        <nav class="menu">
-          <a href="#" class="menu_link menu_link_ativo">Produtos</a>
-          <a href="#" class="menu_link">Fornecedores</a>
-          <a href="#" class="menu_link">Movimentações</a>
-        </nav>
+    <header>
+      <div>
+        <h1>Delivery Lanchonete</h1>
+        <p>Controle de pedidos</p>
       </div>
     </header>
-  <!-- RESUMO E BOTÃO DE NOVOS PRODUTOS -->
+
     <main class="conteudo">
-      <section class="resumo">
-        <div class="resumo_card">
-          <span class="resumo_numero" id="total-produtos">6</span>
-          <span class="resumo_texto">Produtos</span>
-        </div>
-        <div class="resumo_card resumo_card_alerta">
-          <span class="resumo_numero" id="total-repor">3</span>
-          <span class="resumo_texto">Precisam repor</span>
-        </div>
+      <!-- FORMULARIO -->
+      <section>
+        <h2>Cadastro de pedidos</h2>
+        <form id="form">
+          <input type="hidden" id="id" />
+          <div class="campos">
+            <div>
+              <label> Cliente</label>
+              <input type="text" id="" />
+            </div>
 
+            <div>
+              <label> Telefone</label>
+              <input type="number" id="" />
+            </div>
+
+            <div>
+              <label> Endereço</label>
+              <input type="text" id="" />
+            </div>
+
+            <div>
+              <label> Pedido</label>
+              <input type="number" id="" />
+            </div>
+
+            <div>
+              <label> Quantidade</label>
+              <input type="number" id="" />
+            </div>
+          </div>
+        </form>
       </section>
-      <!-- FORMULARIO PARA CADASTRO -->
-      <form class="formulario" id="formulario">
-        <h2 id="formulario-titulo">Novo produto</h2>
-        <input type="hidden" id="produto-id">
-        <label> Nome *
-          <input type="text" id="nome" required>
-        </label>
-        <label >Quantidade *
-          <input type="number" id="quantidade" min="0" required>
-        </label>
-        <label>
-          Estoque mínimo *
-          <input type="number" id="minimo" min="0" required />
-        </label>
+      <!-- TABELA -->
+      <section>
+        <h2>Pedidos</h2>
 
-        <label>
-          Fornecedor *
-          <input type="text" id="fornecedor" required />
-        </label>
-                <div class="formulario_botoes">
-          <button type="submit" class="botao_salvar">Cadastrar</button>
-          <!-- <button type="button" class="botao_cancelar" id="botao-cancelar">Cancelar</button> -->
-        </div>
-        
-        <!-- MENSAGEM SUCESSO/ERRO -->
-  <p class="mensagem" id="mensagem" role="status" hidden></p>
-      </form>
-<!-- TABELA DOS PRODUTOS -->
-     <section class="tabela_produtos">
         <table>
-            <caption>Tabela dos Produtos</caption>
-            <thead>
-
-              <tr>
-                <th>Produtos</th>
-                <th>Quantidade</th>
-                <th>Mínimo</th>
-                <th>Fornecedor</th>
-                <th>Ações</th>
-                
-              </tr>
-            </thead>
-            <tbody id="lista-produtos">
-              <!-- CRIADO NO JS -->
-          </tbody>
+          <thead>
             <tr>
-                <td>dado 1</td>
-                <td>dado 2</td>
-                <td>dado 3</td>
-                <td>dado 4</td>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Endereço</th>
+              <th>Produto</th>
+              <th>Qtd</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th></th>
             </tr>
-            <tr>
-                <td>dado 1</td>
-                <td>dado 2</td>
-                <td>dado 3</td>
-                <td>dado 4</td>
-            </tr>
+          </thead>
+          <tbody id="lista"></tbody>
         </table>
-     </section>
-
-        </div>
       </section>
     </main>
     <script src="script.js"></script>

@@ -1,206 +1,37 @@
 :root {
-    --laranja: #EC5D3D;
+    --amarelo: #F7B538;
     --laranja-escuro: #B8391E;
-    --verde: #235451;
+    --vermelho: #BC0202;
     --verde-escuro: #1B2B29;
     --creme: #FDFBEF;
-    --borda: #E6E1CC;
+    --borda: #E3BF94;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    background: var(--creme);
-    color: var(--verde-escuro);
-    font-family: Arial, sans-serif;
-}
-
-[hidden] {
-    display: none !important;
-}
-
-.header {
-    background: var(--verde);
-    color: var(--creme);
-}
-
-.header_container {
-    max-width: 1240px;
-    margin: auto;
-    padding: 14px 24px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--creme);
-    text-decoration: none;
-}
-
-.logo_icone {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    background: var(--laranja);
-    display: flex;
-    align-items: center;
-    font-family: Impact, "Arial Narrow", Arial, sans-serif;
-    justify-content: center;
-    font-size: 22px;
-}
-
-.menu {
-    display: flex;
-    margin-left: auto;
-}
-
-.menu_link {
-    padding: 10px 16px;
-    color: var(--creme);
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.menu_link:hover {
-    background: rgba(253, 251, 239, 0.12);
-}
-
-.menu_link_ativo, .menu_link_ativo:hover {
-    background: var(--creme);
-    color: var(--verde);
-    font-weight: bold;
-}
-
-.conteudo {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.resumo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.resumo_card {
-    padding: 14px 22px;
-    background-color: #FFFFFF;
-    border: 1px solid var(--borda);
-    border-radius: 18px;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-}
-
-.resumo_numero {
-    font-size: 40px;
-    color: var(--verde);
-    font-family: Impact, "Arial Narrow", Arial, sans-serif;
-}
-
-.resumo_texto {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 14px;
-    font-weight: 600;
-    color: #5B6B68;
-}
-
-.resumo_card_alerta {
-    background-color: #FCE3DC;
-    border: 2px solid var(--laranja);
-}
-
-.resumo_card_alerta .resumo_numero,
-.resumo_card_alerta .resumo_texto {
-    color: var(--laranja-escuro);
-}
-
-.mensagem {
     margin: 0;
-    padding: 12px 16px;
-    border-radius: 10px;
-    font-weight: 700;
-}
-
-.mensagem_sucesso {
-    background: #DCEBE9;
-    color: var(--verde);
-    border: 2px solid var(--verde);
-}
-
-.mensagem_erro {
-    background: #FCE3DC;
-    color: var(--laranja-escuro);
-    border: 2px solid var(--laranja);
-}
-
-.formulario {
-    background: #FFFFFF;
-    border: 1px solid var(--borda);
-    border-radius: 14px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 14px;
-}
-
-.formulario h2 {
-    width: 100%;
-    margin: 0;
-    font-size: 18px;
-    color: var(--verde);
-}
-
-.formulario label {
-    flex: 1 1 180px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.formulario input {
-    padding: 11px;
-    border: 2px solid var(--borda);
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 16px;
+    background: var(--creme);
     color: var(--verde-escuro);
 }
 
-.formulario_botoes {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-}
-
-.botao_salvar, .botao_cancelar {
-    border: none;
-    background-color: var(--laranja);
-    padding: 19px;
+header {
+    background-color: var(--vermelho);
     color: var(--creme);
-    border-radius: 8px;
-    font-weight: 700;
-    font-family: inherit;
-    cursor: pointer;
+    padding: 18px 20px;
 }
 
-.tabela_produtos {
+header div {
+    max-width: 1010px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 4px 0 0;
+    color: #ffffffa1;
 }
